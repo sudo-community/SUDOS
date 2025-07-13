@@ -142,4 +142,6 @@ sddm
 qt5-base
 qt5-quickcontrols2
 qt5-graphicaleffects
-calamares
+base-devel
+git
+bash
