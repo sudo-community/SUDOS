@@ -145,3 +145,5 @@ qt5-graphicaleffects
 base-devel
 git
 bash
+cava
+gtk3
