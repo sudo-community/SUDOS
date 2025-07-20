@@ -136,7 +136,7 @@ tmux
 waybar
 hyprlock
 hypridle
-wofi
+rofi
 hyprpaper
 sddm
 qt5-base
@@ -147,3 +147,8 @@ git
 bash
 cava
 gtk3
+dolphin
+alacritty
+ttf-jetbrains-mono-nerd
+swaync
+swaybg
