@@ -126,6 +126,8 @@ xdg-utils
 xfsprogs
 xl2tpd
 zsh
+
+# custom added
 kitty
 firefox
 hyprland
@@ -152,3 +154,20 @@ alacritty
 ttf-jetbrains-mono-nerd
 swaync
 swaybg
+
+# Dependencies for calamares
+qt6-base
+qt6-svg
+kpmcore
+yaml-cpp
+polkit-qt6
+extra-cmake-modules
+ki18n
+kio
+kiconthemes
+cmake
+kconfig
+solid
+kcoreaddons
+# added from custom sudo repo
+calamares
