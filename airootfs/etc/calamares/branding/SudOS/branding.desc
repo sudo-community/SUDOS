@@ -1,0 +1,11 @@
+---
+name: SudOS
+version: "1.0"
+productName: "SudOS Installer"
+shortProductName: "SudOS"
+bootloaderEntryName: "SudOS"
+logo: sudo-logo.png
+stylesheet: stylesheet.qss
+slideshow: slideshow
+welcomeImage: welcome.png
+languagesImage: languages.png
