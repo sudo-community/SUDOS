@@ -169,5 +169,6 @@ cmake
 kconfig
 solid
 kcoreaddons
+libpwquality
 # added from custom sudo repo
 calamares
