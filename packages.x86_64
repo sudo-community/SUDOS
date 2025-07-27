@@ -170,6 +170,7 @@ kconfig
 solid
 kcoreaddons
 libpwquality
+archiso
 
 # added from custom sudo repo
 calamares

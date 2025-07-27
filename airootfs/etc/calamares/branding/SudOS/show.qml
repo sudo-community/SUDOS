@@ -41,40 +41,16 @@ Presentation
 {
     id: presentation
 
-    /* This timer ticks once per second (1000ms, set in *interval*)
-     * and calls *goToNextSlide()* each time. Note that it needs
-     * to know the *id* of the presentation, so keep *id* (above)
-     * matched with the function call.
-     *
-     * The timer starts when the presentation is activated; you could
-     * also set *running* to true, but that might cost extra resources.
-     */
     Timer {
-        interval: 1000
+        interval: 6000 // ⬅ 6 seconds between slides
         running: presentation.activatedInCalamares
         repeat: true
         onTriggered: presentation.goToNextSlide()
     }
 
-    /* These functions are called when the presentation starts and
-     * ends, respectively. They could be used to start the timer,
-     * but that is done automatically through *activatedInCalamares*,
-     * so there's nothing **to** do.
-     *
-     * Leaving these functions out is fine, although Calamares will
-     * complain that they are missing, then.
-     */
     function onActivate() { }
     function onLeave() { }
 
-
-    /* A presentation is an Item: it has no visual appearance at all.
-     * Give it a background, which fills the whole area of the presentation.
-     * Setting *z* to a low value places this rectangle **behind** other
-     * things in the presentation -- which is correct for a background.
-     *
-     * This uses the background set in the styles section of `branding.desc`.
-     */
     Rectangle {
         id: mybackground
         anchors.fill: parent
@@ -82,19 +58,32 @@ Presentation
         z: -1
     }
 
-    /* The *ImageSlide* is a component unique to this branding directory.
-     * The QML file `ImageSlide.qml` can be stored alongside `show.qml`
-     * and it will be loaded on-demand. See the documentation in that
-     * file for details, but it comes down to this: for each *ImageSlide*,
-     * set *src* to a suitable value (an image path in this directory)
-     * and that will be displayed.
-     */
-    ImageSlide {
+    // Enlarged ImageSlide
+    Image {
         src: "slide1.png"
+        width: parent.width * 0.9
+        height: parent.height * 0.9
+        anchors.centerIn: parent
+        fillMode: Image.PreserveAspectFit
+        opacity: 1.0
+        Behavior on opacity {
+            NumberAnimation {
+                duration: 600
+            }
+        }
     }
 
-    ImageSlide {
+    Image {
         src: "slide2.png"
+        width: parent.width * 0.9
+        height: parent.height * 0.9
+        anchors.centerIn: parent
+        fillMode: Image.PreserveAspectFit
+        opacity: 1.0
+        Behavior on opacity {
+            NumberAnimation {
+                duration: 600
+            }
+        }
     }
-
 }
