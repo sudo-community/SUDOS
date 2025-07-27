@@ -20,7 +20,7 @@ images:
 
 style:
     sidebarBackground:    "#121212"
-    sidebarText:          "#f44336"         # Red
+    sidebarText:          "#FFFFFF"         # #f44336 Red changed to white
     sidebarTextSelect:    "#f44336"         # Red highlight
     sidebarTextHighlight: "#ffffff"         # White for current step
 
