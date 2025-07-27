@@ -57,8 +57,9 @@ Item {
     Image {
         id: image
         source: src
-        width: 300
-        height: 150
         anchors.centerIn: parent
+        width: parent.width * 0.9
+        height: parent.height * 0.9
+        fillMode: Image.PreserveAspectFit
     }
 }

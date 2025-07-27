@@ -171,6 +171,7 @@ solid
 kcoreaddons
 libpwquality
 mkinitcpio
+archiso
 
 # added from custom sudo repo
 calamares
