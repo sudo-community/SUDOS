@@ -170,5 +170,7 @@ kconfig
 solid
 kcoreaddons
 libpwquality
+mkinitcpio
+
 # added from custom sudo repo
 calamares
