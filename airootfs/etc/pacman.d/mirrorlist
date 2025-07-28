@@ -1,0 +1,10 @@
+##
+## Arch Linux mirrorlist
+## Sorted by speed and reliability
+##
+
+Server = https://mirror.rackspace.com/archlinux/$repo/os/$arch
+Server = https://mirror.osbeck.com/archlinux/$repo/os/$arch
+Server = https://mirror.lty.me/archlinux/$repo/os/$arch
+Server = https://mirror.chaoticum.net/arch/$repo/os/$arch
+Server = https://mirrors.kernel.org/archlinux/$repo/os/$arch
