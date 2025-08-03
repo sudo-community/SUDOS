@@ -1,18 +1,4 @@
 #!/bin/bash
-#set -e
+ln -sf /usr/lib/libboost_python313.so.1.88.0 /usr/lib/libboost_python313.so.1.87.0
 
-#systemctl enable sddm.service
-
-# Create user with no password
-#useradd -m -G wheel,audio,video,network,input,nopasswdlogin -s /bin/bash sudos
-#gpasswd -a sudos nopasswdlogin
-
-# Disable password for sudos
-#passwd -d sudos
-
-# Set up autologin via SDDM
-#cat <<EOF > /etc/sddm.conf
-#[Autologin]
-#User=sudos
-#Session=hyprland.desktop
-#EOF
+ln -s /usr/lib/libkpmcore.so.13 /usr/lib/libkpmcore.so.12

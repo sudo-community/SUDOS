@@ -1,0 +1,11 @@
+# Enable custom background
+GRUB_BACKGROUND="/usr/local/share/grub/splash.png"
+
+# Set resolution to match your image (640x480)
+GRUB_GFXMODE="640x480"
+
+# Ensure the resolution persists when booting Linux
+GRUB_GFXPAYLOAD_LINUX="keep"
+
+# Optional: Disable terminal output for pure graphical boot
+#GRUB_TERMINAL_OUTPUT="gfxterm"
