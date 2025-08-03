@@ -15,6 +15,7 @@ cloud-init
 cryptsetup
 darkhttpd
 ddrescue
+dhclient
 dhcpcd
 diffutils
 dmidecode
@@ -66,7 +67,6 @@ memtest86+-efi
 mkinitcpio
 mkinitcpio-archiso
 mkinitcpio-nfs-utils
-mmc-utils
 modemmanager
 mtools
 nano
@@ -93,6 +93,7 @@ pv
 qemu-guest-agent
 refind
 reflector
+rp-pppoe
 rsync
 rxvt-unicode-terminfo
 screen
@@ -116,18 +117,51 @@ usb_modeswitch
 usbmuxd
 usbutils
 vim
-virtualbox-guest-utils-nox
+virtualbox-guest-utils
 vpnc
 wireless-regdb
 wireless_tools
 wpa_supplicant
 wvdial
-xdg-utils
 xfsprogs
 xl2tpd
 zsh
 
-# custom added
+
+# everything above comes from archiso releng folder
+#######################################################
+###                    ALCI                         ###
+#######################################################
+
+#######################################################
+###  PACKAGES THAT ARE REMOVED AFTER INSTALLATION   ###
+###             VIA CALAMARES CONFIG                ###
+#######################################################
+
+alci-dwm
+#alci-dwm-nemesis
+alci-calamares
+xterm
+
+#######################################################
+###      PACKAGES THAT STAY AFTER INSTALLATION      ###
+#######################################################
+
+sddm
+bash-completion
+os-prober
+dex
+libxinerama
+make
+xorg-xkill
+xterm
+xorg-xrdb
+mkinitcpio-openswap
+discord
+
+#######################################################
+###                   Hyprland                      ###
+#######################################################
 kitty
 firefox
 hyprland
@@ -140,7 +174,6 @@ hyprlock
 hypridle
 rofi
 hyprpaper
-sddm
 qt5-base
 qt5-quickcontrols2
 qt5-graphicaleffects
@@ -155,7 +188,12 @@ ttf-jetbrains-mono-nerd
 swaync
 swaybg
 
-# Dependencies for calamares
+#######################################################
+###             Hyprland dependencies               ###
+#######################################################
+boost
+base-devel
+boost-libs
 qt6-base
 qt6-svg
 kpmcore
@@ -170,7 +208,114 @@ kconfig
 solid
 kcoreaddons
 libpwquality
-archiso
+xorg-xhost
+xcb-util-cursor
+libxcb
+xorg-xhost
 
-# added from custom sudo repo
-calamares
+##### you can also use nmtui from the terminal
+#networkmanager
+#network-manager-applet
+
+#######################################################
+###                    EXTRAS                       ###
+#######################################################
+
+##### xorg applications
+
+#xorg-server
+#xorg-apps
+#neofetch
+
+
+##### Drivers for graphical cards
+
+#driver for virtualbox - xf86-video-vmware is dependency
+#systemctl enable vboxservice
+#systemctl start vboxservice
+#to have fullscreen
+#virtualbox-guest-utils
+
+#xf86-video-intel
+#xf86-video-amdgpu
+#xf86-video-nouveau
+
+#nvidia
+#nvidia-settings
+#nvidia-utils
+
+
+
+##### lightdm display manager
+
+#lightdm
+#lightdm-gtk-greeter
+
+##### sddm display manager
+
+#sddm
+#alci-sddm-plasma-archpaint
+
+##### gdm display manager
+
+#gdm
+
+
+
+##### want to have base-devel group
+
+#base-devel
+
+##### want to have linux-headers
+
+#linux-headers
+
+
+
+##### want to have a desktop
+
+#test
+#xfce4
+#xfce4-goodies
+#neofetch
+
+
+##### want to add/use the ArcoLinux repos
+
+#arcolinux-mirrorlist-git
+#arcolinux-keyring
+
+#test
+#arcolinux-wallpapers-git
+
+##### want to add/use the Chaotic repo
+
+#chaotic-mirrorlist
+#chaotic-keyring
+
+#test
+#colloid-cursors-git
+
+
+##### want to add/use your local repo packages
+##### create your packages and put them in the local repo
+
+#There is a copy of the local repo in your folder
+#Copy/paste it to your homefolder
+#Change the name erik to your own username
+#update the database
+
+#test
+#nemesis-wallpapers
+
+
+#### want have a btrfs format
+#### use alci-calamares-config-btrfs 
+
+#timeshift
+#grub-btrfs
+#timeshift-autosnap
+git
+
+#grub theme
+#alci-grub-theme-git

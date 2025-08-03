@@ -1,6 +1,0 @@
-#!/bin/sh
-# Dummy slowloris script to simulate a successful command with a delay
-
-echo "Running dummy slowloris..."
-sleep 2   # simulate some delay, adjust if you want
-exit 0    # success exit code
