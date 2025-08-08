@@ -1,0 +1,11 @@
+NAME="SudOS"
+PRETTY_NAME="SudOS"
+ID=sudos
+BUILD_ID=rolling
+ANSI_COLOR="0;31"
+HOME_URL="https://sudo.gay"
+DOCUMENTATION_URL="https://sudo.gay"
+SUPPORT_URL="https://sudo.gay"
+BUG_REPORT_URL="https://sudo.gay"
+PRIVACY_POLICY_URL="https://sudo.gay"
+LOGO=sudos
